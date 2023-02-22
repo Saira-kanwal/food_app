@@ -10,6 +10,7 @@ class AuthViewModel extends ChangeNotifier
   TextEditingController otpController = TextEditingController();
   final countryPicker = const  FlCountryCodePicker();
 
+//For testing
   void sendCode(BuildContext context) async
   {
     var number = "+923204828032";
