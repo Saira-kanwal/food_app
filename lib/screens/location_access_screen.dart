@@ -41,9 +41,10 @@ class LocationAccessScreen extends StatelessWidget {
                   textAlign: TextAlign.center,
                 ),
                 const Text(
-                  'LOCATION FOR THE BETTER DELIVERY EXPERIENCE',
+                  'Location For The BetterR Delivery Experience',
                   style: TextStyle(
                       color: Colors.black,
+                      fontWeight: FontWeight.w500,
                       fontSize: 12
                   ),
                   textAlign: TextAlign.center,
