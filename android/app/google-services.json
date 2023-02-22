@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "234415652122",
+    "project_id": "food-app-cdc56",
+    "storage_bucket": "food-app-cdc56.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:234415652122:android:5db133e5a4a7e8142800a3",
+        "android_client_info": {
+          "package_name": "com.sairakanwal.food_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "234415652122-v6gtckv40eofbvc13trd134eu1es1pcj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYCerB9PXeEGFcq3Sua8HSOr3-BQtuMeA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "234415652122-v6gtckv40eofbvc13trd134eu1es1pcj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

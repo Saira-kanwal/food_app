@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_app/utils/app_colors.dart';
-import 'package:food_app/viewModels/oath_viewModel.dart';
+import 'package:food_app/viewModels/auth_viewModel.dart';
 import 'package:provider/provider.dart';
 import '../widgets/button.dart';
 import '../widgets/input_field.dart';
@@ -10,7 +10,7 @@ class EnterNameScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    OathViewModel vm = context.watch<OathViewModel>();
+    AuthViewModel vm = context.watch<AuthViewModel>();
     return  Scaffold(
         body: Padding(
           padding: const EdgeInsets.all(30.0),

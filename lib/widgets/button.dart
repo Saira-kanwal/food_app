@@ -11,26 +11,32 @@ class OathButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      onTap: onPressed(),
-        child: Container(
-          height: 55,
-          width: double.maxFinite,
-          decoration: BoxDecoration(
-            color: backgroundColor,
-            borderRadius: BorderRadius.circular(30),
-            border: Border.all(color: AppColors.primaryColor,width: 1)
-          ),
-          child: Center(
-            child: Text(
-              title,
-              style: TextStyle(
-                  color: textColor,
+    return Container(
+      height: 55,
+      width: double.maxFinite,
+      decoration: BoxDecoration(
+        color: backgroundColor,
+        borderRadius: BorderRadius.circular(30),
+        border: Border.all(color: AppColors.primaryColor,width: 1)
+      ),
+      child: ElevatedButton(
+        style: ButtonStyle(
+          backgroundColor: MaterialStateProperty.all(Colors.transparent)
+        ),
+        onPressed: onPressed(),
+        child: Center(
+          child: Text(
+            title,
+            style: TextStyle(
+                color: textColor,
+                fontWeight: FontWeight.bold,
                 fontSize: 20
-              ),
             ),
           ),
         )
+
+      )
+
     );
   }
 }

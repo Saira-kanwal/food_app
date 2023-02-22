@@ -1,31 +1,29 @@
 import 'package:flutter/material.dart';
-import 'package:food_app/screens/verify_otp_screen.dart';
 import 'package:food_app/utils/app_colors.dart';
-import 'package:food_app/viewModels/oath_viewModel.dart';
+import 'package:food_app/viewModels/auth_viewModel.dart';
 import 'package:provider/provider.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../widgets/button.dart';
 import '../widgets/input_field.dart';
 
-class OathScreen extends StatelessWidget {
-  const OathScreen({Key? key}) : super(key: key);
-
+class AddPhoneScreen extends StatelessWidget {
+  const AddPhoneScreen({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    OathViewModel vm = context.watch<OathViewModel>();
+    AuthViewModel vm = context.read<AuthViewModel>();
     return  Scaffold(
       body: Padding(
-        padding: const EdgeInsets.all(30.0),
+        padding: EdgeInsets.all(30.w),
         child: Center(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.start,
-            mainAxisSize: MainAxisSize.max,
             children:  [
-              const SizedBox(height: 90,),
-              const Text(
+              SizedBox(height: 90.h),
+              Text(
                 "ADD YOUR,",
                 style: TextStyle(
-                  fontSize: 55,
+                  fontSize: 52.sp,
                   fontWeight: FontWeight.bold,
                   color: Colors.black,
                 ),
@@ -34,7 +32,7 @@ class OathScreen extends StatelessWidget {
               const Text(
                 "NUMBER.",
                 style: TextStyle(
-                  fontSize: 55,
+                  fontSize: 52,
                   fontWeight: FontWeight.bold,
                   color: AppColors.primaryColor,
                 ),
@@ -43,12 +41,14 @@ class OathScreen extends StatelessWidget {
               const Text(
                 'Add Number For Better Experience.',
                 style: TextStyle(
-                  color: Colors.black,
-                  fontWeight: FontWeight.w500
+                  color: Colors.black54,
+                    fontSize: 15,
+                  fontWeight: FontWeight.w600
                 ),
                 textAlign: TextAlign.center,
               ),
-              const SizedBox(height: 80,),
+              SizedBox(height: 80.h),
+
               SizedBox(
                 height: 70,
                 width: double.maxFinite,
@@ -56,17 +56,16 @@ class OathScreen extends StatelessWidget {
                   controller: vm.oathController,
                   onTap:  ()  {
                   },
-
                 ),
               ),
               const Spacer(),
               OathButton(
                 title: 'Send code (OTP)',
                 onPressed: (){
-                  // Navigator.push(context, MaterialPageRoute(builder: (context)=> const OTPScreen()));
+                  vm.sendCode(context);
                 },
                 backgroundColor: AppColors.primaryColor,
-                textColor: Colors.white,
+                textColor: Colors.white70,
               )
 
 
