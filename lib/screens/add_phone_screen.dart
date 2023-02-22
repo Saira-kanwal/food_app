@@ -6,8 +6,8 @@ import 'package:provider/provider.dart';
 import '../widgets/button.dart';
 import '../widgets/input_field.dart';
 
-class OathScreen extends StatelessWidget {
-  const OathScreen({Key? key}) : super(key: key);
+class AddPhoneScreen extends StatelessWidget {
+  const AddPhoneScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
